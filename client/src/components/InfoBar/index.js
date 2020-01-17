@@ -1,6 +1,6 @@
 import React from "react";
 import "./InfoBar.css";
-import { GiCircle, GiPlainCircle } from "react-icons/gi";
+import { GiPlainCircle } from "react-icons/gi";
 import { Link } from "react-router-dom";
 
 export const InfoBar = ({ room }) => {
