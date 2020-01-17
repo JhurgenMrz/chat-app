@@ -17,11 +17,12 @@ export const Chat = ({ location }) => {
 	const [messages, setMessages] = useState([]);
 
 	// const ENDPOINT = "localhost:5000";
+	const ENDPOINT = "/";
 
 	useEffect(() => {
 		const { name, room } = queryString.parse(location.search);
 
-		socket = io("/");
+		socket = io(ENDPOINT);
 
 		setName(name);
 		setRoom(room);
@@ -56,7 +57,7 @@ export const Chat = ({ location }) => {
 		}
 	};
 
-	console.log(message, messages);
+	// console.log(message, messages);
 
 	return (
 		<div className="outerContainer">

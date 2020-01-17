@@ -3,3 +3,8 @@
 	overflow: auto;
 	flex: auto;
 }
+@media only screen and (max-width: 425px) {
+	.messages {
+		padding: 5% 0 65px 0;
+	}
+}
